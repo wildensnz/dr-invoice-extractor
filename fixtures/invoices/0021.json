@@ -1,0 +1,74 @@
+{
+  "id": "0021",
+  "template": "thermal",
+  "invoice": {
+    "issuer": {
+      "name": "Colmado Doña Carmen",
+      "rnc": "130678901"
+    },
+    "ncf": "B0200011770",
+    "date": "2025-10-07",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Pan de agua",
+        "quantity": 12,
+        "unitPrice": 9.5,
+        "total": 114,
+        "exempt": true
+      },
+      {
+        "description": "Arroz selecto lb",
+        "quantity": 1.5,
+        "unitPrice": 35,
+        "total": 52.5,
+        "exempt": true
+      },
+      {
+        "description": "Jabón de cuaba",
+        "quantity": 9,
+        "unitPrice": 38.5,
+        "total": 346.5,
+        "exempt": false
+      },
+      {
+        "description": "Pollo fresco lb",
+        "quantity": 1.5,
+        "unitPrice": 90,
+        "total": 135,
+        "exempt": true
+      },
+      {
+        "description": "Detergente en polvo 1 kg",
+        "quantity": 10,
+        "unitPrice": 157.5,
+        "total": 1575,
+        "exempt": false
+      },
+      {
+        "description": "Salami lb",
+        "quantity": 3,
+        "unitPrice": 179,
+        "total": 537,
+        "exempt": false
+      },
+      {
+        "description": "Huevos cartón 30 u",
+        "quantity": 4,
+        "unitPrice": 201.5,
+        "total": 806,
+        "exempt": true
+      },
+      {
+        "description": "Leche entera 1 L",
+        "quantity": 1,
+        "unitPrice": 73.5,
+        "total": 73.5,
+        "exempt": true
+      }
+    ],
+    "subtotal": 3639.5,
+    "itbis": 442.53,
+    "total": 4082.03
+  }
+}

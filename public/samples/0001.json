@@ -1,0 +1,50 @@
+{
+  "id": "0001",
+  "template": "classic",
+  "invoice": {
+    "issuer": {
+      "name": "Ferretería El Progreso SRL",
+      "rnc": "131123457"
+    },
+    "customer": {
+      "name": "Grupo Cibao Logístico SRL",
+      "rnc": "131778895"
+    },
+    "ncf": "B0100006158",
+    "date": "2026-07-22",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Candado 50 mm",
+        "quantity": 12,
+        "unitPrice": 436.5,
+        "total": 5238,
+        "exempt": false
+      },
+      {
+        "description": "Varilla 3/8\" x 20 pies",
+        "quantity": 5,
+        "unitPrice": 301,
+        "total": 1505,
+        "exempt": false
+      },
+      {
+        "description": "Cemento gris 42.5 kg",
+        "quantity": 3,
+        "unitPrice": 394,
+        "total": 1182,
+        "exempt": false
+      },
+      {
+        "description": "Brocha 3\"",
+        "quantity": 1,
+        "unitPrice": 110,
+        "total": 110,
+        "exempt": false
+      }
+    ],
+    "subtotal": 8035,
+    "itbis": 1446.3,
+    "total": 9481.3
+  }
+}

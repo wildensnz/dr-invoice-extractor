@@ -1,0 +1,58 @@
+{
+  "id": "0008",
+  "template": "modern",
+  "invoice": {
+    "issuer": {
+      "name": "Papelería Universal SRL",
+      "rnc": "102345678"
+    },
+    "customer": {
+      "name": "Grupo Cibao Logístico SRL",
+      "rnc": "131778895"
+    },
+    "ncf": "B0100006169",
+    "date": "2026-06-28",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Carpetas manila 100 u",
+        "quantity": 2,
+        "unitPrice": 345,
+        "total": 690,
+        "exempt": false
+      },
+      {
+        "description": "Grapadora de escritorio",
+        "quantity": 2,
+        "unitPrice": 329.5,
+        "total": 659,
+        "exempt": false
+      },
+      {
+        "description": "Libreta rayada 100 hojas",
+        "quantity": 12,
+        "unitPrice": 96,
+        "total": 1152,
+        "exempt": false
+      },
+      {
+        "description": "Bolígrafos azules caja 12 u",
+        "quantity": 3,
+        "unitPrice": 206.5,
+        "total": 619.5,
+        "exempt": false
+      },
+      {
+        "description": "Tóner HP 85A",
+        "quantity": 1,
+        "unitPrice": 2861,
+        "total": 2861,
+        "exempt": false
+      }
+    ],
+    "subtotal": 5981.5,
+    "discount": 299.08,
+    "itbis": 1022.84,
+    "total": 6705.26
+  }
+}

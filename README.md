@@ -4,8 +4,33 @@ Turn photos and PDFs of **Dominican invoices** into structured JSON with Claude
 vision, validate them with local business rules (RNC, NCF, ITBIS, totals), review
 and fix them in the browser, and measure extraction accuracy with an eval suite.
 
-> Work in progress. Phases: scaffold ✅ · schema + validation + fixtures ·
+> Work in progress. Phases: scaffold ✅ · schema + validation + fixtures ✅ ·
 > extraction API · review UI · evals · CI + deploy.
+
+## Validation rules
+
+Every extracted invoice goes through `lib/validate.ts`. Rules never change a
+value; they flag it as `ok` or `warning` with a reason so a human decides.
+
+| Field            | Rule                                                                |
+| ---------------- | ------------------------------------------------------------------- |
+| `issuer.rnc`     | 9-digit RNC with a valid DGII check digit, or 11-digit cédula       |
+| `customer.rnc`   | Same; required when the NCF is crédito fiscal (B01 / E31)           |
+| `ncf`            | `B` + type + 8 digits or e-CF `E` + type + 10 digits; known type    |
+| `date`           | Real calendar date, not in the future                               |
+| `items[i].total` | quantity × unit price (± RD$1)                                      |
+| `subtotal`       | Σ line totals (± RD$1)                                              |
+| `itbis`          | 18 % of the taxable base (exempt lines excluded, discount prorated) |
+| `total`          | subtotal − discount + ITBIS (± RD$1)                                |
+
+## Synthetic fixtures
+
+`npm run fixtures` renders 30 invented invoices (3 layouts: formal A4, modern
+A4, 80 mm thermal ticket) to `fixtures/invoices/NNNN.{pdf,png,json}` with
+Playwright. Data is seeded, so the output is byte-for-byte reproducible. They
+cover B01/B02/B14/B15 and e-CF (E31/E32), ITBIS-exempt lines, discounts,
+customers with RNC, cédula or none, and tax ids printed with and without
+dashes. Nothing in them is real.
 
 ## Stack
 

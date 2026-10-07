@@ -1,0 +1,50 @@
+{
+  "id": "0026",
+  "template": "modern",
+  "invoice": {
+    "issuer": {
+      "name": "Papelería Universal SRL",
+      "rnc": "102345678"
+    },
+    "customer": {
+      "name": "Hotel Playa Dorada SRL",
+      "rnc": "101990015"
+    },
+    "ncf": "E310000031441",
+    "date": "2026-01-25",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Libreta rayada 100 hojas",
+        "quantity": 4,
+        "unitPrice": 94.5,
+        "total": 378,
+        "exempt": false
+      },
+      {
+        "description": "Bolígrafos azules caja 12 u",
+        "quantity": 6,
+        "unitPrice": 153.5,
+        "total": 921,
+        "exempt": false
+      },
+      {
+        "description": "Marcadores permanentes 4 u",
+        "quantity": 3,
+        "unitPrice": 258,
+        "total": 774,
+        "exempt": false
+      },
+      {
+        "description": "Tóner HP 85A",
+        "quantity": 3,
+        "unitPrice": 3256,
+        "total": 9768,
+        "exempt": false
+      }
+    ],
+    "subtotal": 11841,
+    "itbis": 2131.38,
+    "total": 13972.38
+  }
+}

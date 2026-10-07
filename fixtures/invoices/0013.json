@@ -1,0 +1,50 @@
+{
+  "id": "0013",
+  "template": "classic",
+  "invoice": {
+    "issuer": {
+      "name": "Suplidora Industrial Duarte SRL",
+      "rnc": "130456781"
+    },
+    "customer": {
+      "name": "Constructora Duarte SRL",
+      "rnc": "101122331"
+    },
+    "ncf": "B0100006175",
+    "date": "2026-03-22",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Pintura acrílica blanca gl",
+        "quantity": 1,
+        "unitPrice": 925,
+        "total": 925,
+        "exempt": false
+      },
+      {
+        "description": "Bloque de 6\"",
+        "quantity": 5,
+        "unitPrice": 29,
+        "total": 145,
+        "exempt": false
+      },
+      {
+        "description": "Cemento gris 42.5 kg",
+        "quantity": 5,
+        "unitPrice": 436,
+        "total": 2180,
+        "exempt": false
+      },
+      {
+        "description": "Brocha 3\"",
+        "quantity": 3,
+        "unitPrice": 133,
+        "total": 399,
+        "exempt": false
+      }
+    ],
+    "subtotal": 3649,
+    "itbis": 656.82,
+    "total": 4305.82
+  }
+}

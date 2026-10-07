@@ -1,0 +1,57 @@
+{
+  "id": "0017",
+  "template": "modern",
+  "invoice": {
+    "issuer": {
+      "name": "Papelería Universal SRL",
+      "rnc": "102345678"
+    },
+    "customer": {
+      "name": "Reyes & Asociados Abogados SRL",
+      "rnc": "131223346"
+    },
+    "ncf": "E310000031436",
+    "date": "2026-03-05",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Grapadora de escritorio",
+        "quantity": 5,
+        "unitPrice": 282.5,
+        "total": 1412.5,
+        "exempt": false
+      },
+      {
+        "description": "Tóner HP 85A",
+        "quantity": 2,
+        "unitPrice": 3164,
+        "total": 6328,
+        "exempt": false
+      },
+      {
+        "description": "Resma papel bond 8.5 x 11",
+        "quantity": 5,
+        "unitPrice": 378.5,
+        "total": 1892.5,
+        "exempt": false
+      },
+      {
+        "description": "Libreta rayada 100 hojas",
+        "quantity": 7,
+        "unitPrice": 109,
+        "total": 763,
+        "exempt": false
+      },
+      {
+        "description": "Bolígrafos azules caja 12 u",
+        "quantity": 10,
+        "unitPrice": 149.5,
+        "total": 1495,
+        "exempt": false
+      }
+    ],
+    "subtotal": 11891,
+    "itbis": 2140.38,
+    "total": 14031.38
+  }
+}

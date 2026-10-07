@@ -1,0 +1,67 @@
+{
+  "id": "0003",
+  "template": "thermal",
+  "invoice": {
+    "issuer": {
+      "name": "Mini Market El Vecino",
+      "rnc": "401234564"
+    },
+    "ncf": "E320000005062",
+    "date": "2026-06-23",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Refresco 2 L",
+        "quantity": 12,
+        "unitPrice": 110,
+        "total": 1320,
+        "exempt": false
+      },
+      {
+        "description": "Pan de agua",
+        "quantity": 6,
+        "unitPrice": 9.5,
+        "total": 57,
+        "exempt": true
+      },
+      {
+        "description": "Jabón de cuaba",
+        "quantity": 8,
+        "unitPrice": 40.5,
+        "total": 324,
+        "exempt": false
+      },
+      {
+        "description": "Salami lb",
+        "quantity": 0.5,
+        "unitPrice": 182.5,
+        "total": 91.25,
+        "exempt": false
+      },
+      {
+        "description": "Detergente en polvo 1 kg",
+        "quantity": 5,
+        "unitPrice": 171,
+        "total": 855,
+        "exempt": false
+      },
+      {
+        "description": "Huevos cartón 30 u",
+        "quantity": 11,
+        "unitPrice": 233,
+        "total": 2563,
+        "exempt": true
+      },
+      {
+        "description": "Aceite vegetal 128 oz",
+        "quantity": 4,
+        "unitPrice": 493.5,
+        "total": 1974,
+        "exempt": false
+      }
+    ],
+    "subtotal": 7184.25,
+    "itbis": 821.57,
+    "total": 8005.82
+  }
+}

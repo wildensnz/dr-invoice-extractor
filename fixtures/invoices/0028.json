@@ -1,0 +1,36 @@
+{
+  "id": "0028",
+  "template": "classic",
+  "invoice": {
+    "issuer": {
+      "name": "Suplidora Industrial Duarte SRL",
+      "rnc": "130456781"
+    },
+    "customer": {
+      "name": "Clínica Santa Ana SRL",
+      "rnc": "101556676"
+    },
+    "ncf": "B0100006202",
+    "date": "2026-08-21",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Varilla 3/8\" x 20 pies",
+        "quantity": 4,
+        "unitPrice": 283.5,
+        "total": 1134,
+        "exempt": false
+      },
+      {
+        "description": "Bloque de 6\"",
+        "quantity": 4,
+        "unitPrice": 29.5,
+        "total": 118,
+        "exempt": false
+      }
+    ],
+    "subtotal": 1252,
+    "itbis": 225.36,
+    "total": 1477.36
+  }
+}

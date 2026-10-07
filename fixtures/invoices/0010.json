@@ -1,0 +1,29 @@
+{
+  "id": "0010",
+  "template": "classic",
+  "invoice": {
+    "issuer": {
+      "name": "Ferretería El Progreso SRL",
+      "rnc": "131123457"
+    },
+    "customer": {
+      "name": "Colegio Los Prados SRL",
+      "rnc": "131667783"
+    },
+    "ncf": "B0100006174",
+    "date": "2026-01-14",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Brocha 3\"",
+        "quantity": 5,
+        "unitPrice": 112,
+        "total": 560,
+        "exempt": false
+      }
+    ],
+    "subtotal": 560,
+    "itbis": 100.8,
+    "total": 660.8
+  }
+}

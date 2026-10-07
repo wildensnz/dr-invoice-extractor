@@ -1,0 +1,70 @@
+{
+  "id": "0030",
+  "template": "thermal",
+  "invoice": {
+    "issuer": {
+      "name": "Farmacia San Judas Tadeo SRL",
+      "rnc": "131789013"
+    },
+    "customer": {
+      "name": "Juan Carlos Pérez"
+    },
+    "ncf": "B0200011792",
+    "date": "2025-09-08",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Pasta dental 100 ml",
+        "quantity": 11,
+        "unitPrice": 125,
+        "total": 1375,
+        "exempt": false
+      },
+      {
+        "description": "Amoxicilina 500 mg caja 21 cap",
+        "quantity": 11,
+        "unitPrice": 384.5,
+        "total": 4229.5,
+        "exempt": true
+      },
+      {
+        "description": "Pañales talla M paq 36 u",
+        "quantity": 1,
+        "unitPrice": 578.5,
+        "total": 578.5,
+        "exempt": false
+      },
+      {
+        "description": "Suero oral sobre",
+        "quantity": 5,
+        "unitPrice": 27,
+        "total": 135,
+        "exempt": true
+      },
+      {
+        "description": "Desodorante roll-on",
+        "quantity": 11,
+        "unitPrice": 215,
+        "total": 2365,
+        "exempt": false
+      },
+      {
+        "description": "Shampoo anticaspa 400 ml",
+        "quantity": 6,
+        "unitPrice": 375,
+        "total": 2250,
+        "exempt": false
+      },
+      {
+        "description": "Omeprazol 20 mg caja 14 cap",
+        "quantity": 7,
+        "unitPrice": 235,
+        "total": 1645,
+        "exempt": true
+      }
+    ],
+    "subtotal": 12578,
+    "itbis": 1182.33,
+    "total": 13760.33
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "0024",
+  "template": "thermal",
+  "invoice": {
+    "issuer": {
+      "name": "Farmacia San Judas Tadeo SRL",
+      "rnc": "131789013"
+    },
+    "ncf": "B0200011779",
+    "date": "2025-10-28",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Alcohol 70% 16 oz",
+        "quantity": 2,
+        "unitPrice": 119,
+        "total": 238,
+        "exempt": false
+      },
+      {
+        "description": "Suero oral sobre",
+        "quantity": 6,
+        "unitPrice": 26.5,
+        "total": 159,
+        "exempt": true
+      },
+      {
+        "description": "Amoxicilina 500 mg caja 21 cap",
+        "quantity": 2,
+        "unitPrice": 378.5,
+        "total": 757,
+        "exempt": true
+      }
+    ],
+    "subtotal": 1154,
+    "itbis": 42.84,
+    "total": 1196.84
+  }
+}

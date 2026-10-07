@@ -1,0 +1,64 @@
+{
+  "id": "0002",
+  "template": "modern",
+  "invoice": {
+    "issuer": {
+      "name": "Repuestos Hermanos Pérez SRL",
+      "rnc": "132567897"
+    },
+    "customer": {
+      "name": "Juan Carlos Pérez",
+      "rnc": "00170591322"
+    },
+    "ncf": "E320000005059",
+    "date": "2026-06-30",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Filtro de aceite",
+        "quantity": 8,
+        "unitPrice": 631.5,
+        "total": 5052,
+        "exempt": false
+      },
+      {
+        "description": "Pastillas de freno delanteras (juego)",
+        "quantity": 3,
+        "unitPrice": 2097,
+        "total": 6291,
+        "exempt": false
+      },
+      {
+        "description": "Batería 12 V 65 Ah",
+        "quantity": 1,
+        "unitPrice": 7046,
+        "total": 7046,
+        "exempt": false
+      },
+      {
+        "description": "Líquido de frenos DOT 4",
+        "quantity": 3,
+        "unitPrice": 353.5,
+        "total": 1060.5,
+        "exempt": false
+      },
+      {
+        "description": "Bujía de iridio",
+        "quantity": 7,
+        "unitPrice": 191,
+        "total": 1337,
+        "exempt": false
+      },
+      {
+        "description": "Aceite de motor 5W-30 gl",
+        "quantity": 2,
+        "unitPrice": 2006,
+        "total": 4012,
+        "exempt": false
+      }
+    ],
+    "subtotal": 24798.5,
+    "itbis": 4463.73,
+    "total": 29262.23
+  }
+}

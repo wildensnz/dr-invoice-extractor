@@ -1,0 +1,53 @@
+{
+  "id": "0018",
+  "template": "thermal",
+  "invoice": {
+    "issuer": {
+      "name": "Colmado Doña Carmen",
+      "rnc": "130678901"
+    },
+    "ncf": "B0200011768",
+    "date": "2026-06-26",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Salami lb",
+        "quantity": 0.5,
+        "unitPrice": 183,
+        "total": 91.5,
+        "exempt": false
+      },
+      {
+        "description": "Papel higiénico 4 rollos",
+        "quantity": 8,
+        "unitPrice": 138,
+        "total": 1104,
+        "exempt": false
+      },
+      {
+        "description": "Pan de agua",
+        "quantity": 11,
+        "unitPrice": 11,
+        "total": 121,
+        "exempt": true
+      },
+      {
+        "description": "Jabón de cuaba",
+        "quantity": 8,
+        "unitPrice": 37.5,
+        "total": 300,
+        "exempt": false
+      },
+      {
+        "description": "Arroz selecto lb",
+        "quantity": 1,
+        "unitPrice": 31,
+        "total": 31,
+        "exempt": true
+      }
+    ],
+    "subtotal": 1647.5,
+    "itbis": 269.19,
+    "total": 1916.69
+  }
+}

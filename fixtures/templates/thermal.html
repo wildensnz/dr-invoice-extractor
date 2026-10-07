@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{title}} {{ncf}}</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        background: #fff;
+      }
+      body {
+        width: 302px;
+        padding: 18px 14px 26px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 12px;
+        line-height: 1.35;
+        color: #000;
+      }
+      .center {
+        text-align: center;
+      }
+      .big {
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .sep {
+        border: 0;
+        border-top: 1px dashed #000;
+        margin: 8px 0;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 6px;
+      }
+      .row span:last-child {
+        white-space: nowrap;
+      }
+      .item {
+        margin-bottom: 4px;
+      }
+      .item .desc {
+        word-break: break-word;
+      }
+      .item .calc {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 14px;
+      }
+      .bold {
+        font-weight: bold;
+      }
+      .total {
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .small {
+        font-size: 10.5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center big">{{issuerName}}</div>
+    <div class="center small">{{issuerAddress}}</div>
+    <div class="center small">Tel. {{issuerPhone}}</div>
+    <div class="center">RNC: {{issuerRnc}}</div>
+    <hr class="sep" />
+    <div class="center bold">{{title}}</div>
+    <div class="center">NCF: {{ncf}}</div>
+    <div class="center small">Valido hasta {{ncfValidUntil}}</div>
+    <hr class="sep" />
+    <div class="row">
+      <span>Fecha: {{date}}</span><span>Tkt: {{invoiceNumber}}</span>
+    </div>
+    <div class="row"><span>Caja: 01</span><span>{{paymentMethod}}</span></div>
+    {{#customer}}
+    <div>Cliente: {{customerName}}</div>
+    {{#customerRnc}}
+    <div>{{customerIdLabel}}: {{customerRnc}}</div>
+    {{/customerRnc}} {{/customer}}
+    <hr class="sep" />
+    {{#items}}
+    <div class="item">
+      <div class="desc">{{description}}{{#exempt}} (E){{/exempt}}</div>
+      <div class="calc">
+        <span>{{qty}} x {{unitPrice}}</span>
+        <span>{{total}}</span>
+      </div>
+    </div>
+    {{/items}}
+    <hr class="sep" />
+    <div class="row"><span>SUBTOTAL</span><span>{{subtotal}}</span></div>
+    {{#discount}}
+    <div class="row"><span>DESCUENTO</span><span>-{{discount}}</span></div>
+    {{/discount}}
+    <div class="row"><span>ITBIS 18%</span><span>{{itbis}}</span></div>
+    <div class="row total"><span>TOTAL RD$</span><span>{{total}}</span></div>
+    {{#paid}}
+    <hr class="sep" />
+    <div class="row"><span>EFECTIVO</span><span>{{paid}}</span></div>
+    <div class="row"><span>CAMBIO</span><span>{{change}}</span></div>
+    {{/paid}}
+    <hr class="sep" />
+    {{#hasExempt}}
+    <div class="small">(E) = Exento de ITBIS</div>
+    {{/hasExempt}} {{#securityCode}}
+    <div class="small">Cod. seguridad e-CF: {{securityCode}}</div>
+    {{/securityCode}}
+    <div class="center" style="margin-top: 10px">
+      *** GRACIAS POR SU COMPRA ***
+    </div>
+    <div class="center small">Conserve este ticket</div>
+  </body>
+</html>

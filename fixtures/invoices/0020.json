@@ -1,0 +1,30 @@
+{
+  "id": "0020",
+  "template": "modern",
+  "invoice": {
+    "issuer": {
+      "name": "Tecnología Quisqueya SRL",
+      "rnc": "131987656"
+    },
+    "customer": {
+      "name": "Constructora Duarte SRL",
+      "rnc": "101122331"
+    },
+    "ncf": "B0100006192",
+    "date": "2025-11-14",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Memoria USB 64 GB",
+        "quantity": 8,
+        "unitPrice": 812,
+        "total": 6496,
+        "exempt": false
+      }
+    ],
+    "subtotal": 6496,
+    "discount": 649.6,
+    "itbis": 1052.35,
+    "total": 6898.75
+  }
+}

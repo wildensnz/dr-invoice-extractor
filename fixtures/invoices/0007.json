@@ -1,0 +1,64 @@
+{
+  "id": "0007",
+  "template": "classic",
+  "invoice": {
+    "issuer": {
+      "name": "Suplidora Industrial Duarte SRL",
+      "rnc": "130456781"
+    },
+    "customer": {
+      "name": "Reyes & Asociados Abogados SRL",
+      "rnc": "131223346"
+    },
+    "ncf": "B0100006167",
+    "date": "2026-02-13",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Varilla 3/8\" x 20 pies",
+        "quantity": 2,
+        "unitPrice": 323,
+        "total": 646,
+        "exempt": false
+      },
+      {
+        "description": "Brocha 3\"",
+        "quantity": 2,
+        "unitPrice": 136,
+        "total": 272,
+        "exempt": false
+      },
+      {
+        "description": "Pintura acrílica blanca gl",
+        "quantity": 1,
+        "unitPrice": 1140,
+        "total": 1140,
+        "exempt": false
+      },
+      {
+        "description": "Cinta métrica 5 m",
+        "quantity": 7,
+        "unitPrice": 217.5,
+        "total": 1522.5,
+        "exempt": false
+      },
+      {
+        "description": "Clavos 2\" lb",
+        "quantity": 2.5,
+        "unitPrice": 65,
+        "total": 162.5,
+        "exempt": false
+      },
+      {
+        "description": "Bloque de 6\"",
+        "quantity": 4,
+        "unitPrice": 34.5,
+        "total": 138,
+        "exempt": false
+      }
+    ],
+    "subtotal": 3881,
+    "itbis": 698.58,
+    "total": 4579.58
+  }
+}

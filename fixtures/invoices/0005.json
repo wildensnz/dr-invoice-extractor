@@ -1,0 +1,36 @@
+{
+  "id": "0005",
+  "template": "modern",
+  "invoice": {
+    "issuer": {
+      "name": "Papelería Universal SRL",
+      "rnc": "102345678"
+    },
+    "customer": {
+      "name": "Reyes & Asociados Abogados SRL",
+      "rnc": "131223346"
+    },
+    "ncf": "E310000031429",
+    "date": "2025-12-17",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Resma papel bond 8.5 x 11",
+        "quantity": 5,
+        "unitPrice": 418,
+        "total": 2090,
+        "exempt": false
+      },
+      {
+        "description": "Grapadora de escritorio",
+        "quantity": 8,
+        "unitPrice": 309,
+        "total": 2472,
+        "exempt": false
+      }
+    ],
+    "subtotal": 4562,
+    "itbis": 821.16,
+    "total": 5383.16
+  }
+}

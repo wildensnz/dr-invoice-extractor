@@ -1,0 +1,50 @@
+{
+  "id": "0023",
+  "template": "modern",
+  "invoice": {
+    "issuer": {
+      "name": "Tecnología Quisqueya SRL",
+      "rnc": "131987656"
+    },
+    "customer": {
+      "name": "Grupo Cibao Logístico SRL",
+      "rnc": "131778895"
+    },
+    "ncf": "E310000031439",
+    "date": "2026-04-18",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Servicio de instalación (hora)",
+        "quantity": 2,
+        "unitPrice": 2083,
+        "total": 4166,
+        "exempt": false
+      },
+      {
+        "description": "Cargador USB-C 65 W",
+        "quantity": 2,
+        "unitPrice": 2185,
+        "total": 4370,
+        "exempt": false
+      },
+      {
+        "description": "Cable HDMI 2 m",
+        "quantity": 12,
+        "unitPrice": 487,
+        "total": 5844,
+        "exempt": false
+      },
+      {
+        "description": "Cable de red Cat6 3 m",
+        "quantity": 9,
+        "unitPrice": 412,
+        "total": 3708,
+        "exempt": false
+      }
+    ],
+    "subtotal": 18088,
+    "itbis": 3255.84,
+    "total": 21343.84
+  }
+}

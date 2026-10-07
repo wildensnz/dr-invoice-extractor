@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{title}} {{ncf}}</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        background: #fff;
+      }
+      body {
+        width: 794px;
+        min-height: 1123px;
+        padding: 48px 52px;
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 13px;
+        color: #111;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        border-bottom: 3px double #111;
+        padding-bottom: 14px;
+      }
+      .issuer h1 {
+        margin: 0 0 4px;
+        font-size: 24px;
+        letter-spacing: 0.5px;
+      }
+      .issuer p {
+        margin: 2px 0;
+      }
+      .fiscal {
+        border: 1px solid #111;
+        padding: 10px 14px;
+        min-width: 270px;
+        text-align: center;
+      }
+      .fiscal .title {
+        font-weight: bold;
+        font-size: 13px;
+        margin-bottom: 8px;
+        letter-spacing: 0.3px;
+      }
+      .fiscal table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12px;
+      }
+      .fiscal td {
+        padding: 2px 4px;
+        text-align: left;
+      }
+      .fiscal td:first-child {
+        font-weight: bold;
+        white-space: nowrap;
+      }
+      .ncf {
+        font-family: 'Courier New', monospace;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .meta {
+        display: flex;
+        justify-content: space-between;
+        margin: 16px 0;
+        gap: 24px;
+      }
+      .box {
+        border: 1px solid #555;
+        padding: 8px 12px;
+        flex: 1;
+      }
+      .box .label {
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #555;
+        letter-spacing: 0.6px;
+      }
+      table.items {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 8px;
+      }
+      table.items th,
+      table.items td {
+        border: 1px solid #333;
+        padding: 6px 8px;
+      }
+      table.items th {
+        background: #e9e6df;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+      .num {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+      .center {
+        text-align: center;
+      }
+      .totals {
+        margin-top: 14px;
+        margin-left: auto;
+        width: 300px;
+        border-collapse: collapse;
+      }
+      .totals td {
+        padding: 5px 8px;
+        border-bottom: 1px solid #bbb;
+      }
+      .totals tr.grand td {
+        border-top: 2px solid #111;
+        border-bottom: 2px solid #111;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      .footer {
+        margin-top: 36px;
+        font-size: 11px;
+        color: #333;
+        display: flex;
+        justify-content: space-between;
+      }
+      .legend {
+        margin-top: 10px;
+        font-size: 11px;
+        color: #333;
+      }
+      .sign {
+        margin-top: 56px;
+        display: flex;
+        gap: 60px;
+      }
+      .sign div {
+        flex: 1;
+        border-top: 1px solid #111;
+        text-align: center;
+        padding-top: 4px;
+        font-size: 11px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="issuer">
+        <h1>{{issuerName}}</h1>
+        <p><strong>RNC:</strong> {{issuerRnc}}</p>
+        <p>{{issuerAddress}}</p>
+        <p>Tel. {{issuerPhone}}</p>
+      </div>
+      <div class="fiscal">
+        <div class="title">{{title}}</div>
+        <table>
+          <tr>
+            <td>NCF:</td>
+            <td class="ncf">{{ncf}}</td>
+          </tr>
+          <tr>
+            <td>Válida hasta:</td>
+            <td>{{ncfValidUntil}}</td>
+          </tr>
+          <tr>
+            <td>Factura No.:</td>
+            <td>{{invoiceNumber}}</td>
+          </tr>
+          <tr>
+            <td>Fecha:</td>
+            <td>{{date}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="meta">
+      {{#customer}}
+      <div class="box">
+        <div class="label">Cliente</div>
+        <div><strong>{{customerName}}</strong></div>
+        <div>{{customerIdLabel}}: {{customerRnc}}</div>
+      </div>
+      {{/customer}} {{^customer}}
+      <div class="box">
+        <div class="label">Cliente</div>
+        <div>Consumidor final</div>
+      </div>
+      {{/customer}}
+      <div class="box">
+        <div class="label">Condiciones</div>
+        <div>Forma de pago: {{paymentMethod}}</div>
+        <div>Moneda: Pesos dominicanos (RD$)</div>
+      </div>
+    </div>
+
+    <table class="items">
+      <thead>
+        <tr>
+          <th style="width: 60px">Cant.</th>
+          <th>Descripción</th>
+          <th style="width: 120px">Precio unit.</th>
+          <th style="width: 50px">ITBIS</th>
+          <th style="width: 130px">Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#items}}
+        <tr>
+          <td class="center">{{qty}}</td>
+          <td>{{description}}</td>
+          <td class="num">{{unitPrice}}</td>
+          <td class="center">
+            {{#exempt}}E{{/exempt}}{{^exempt}}18%{{/exempt}}
+          </td>
+          <td class="num">{{total}}</td>
+        </tr>
+        {{/items}}
+      </tbody>
+    </table>
+
+    <table class="totals">
+      <tr>
+        <td>Subtotal</td>
+        <td class="num">{{subtotal}}</td>
+      </tr>
+      {{#discount}}
+      <tr>
+        <td>Descuento</td>
+        <td class="num">-{{discount}}</td>
+      </tr>
+      {{/discount}}
+      <tr>
+        <td>ITBIS (18%)</td>
+        <td class="num">{{itbis}}</td>
+      </tr>
+      <tr class="grand">
+        <td>TOTAL A PAGAR</td>
+        <td class="num">{{total}}</td>
+      </tr>
+    </table>
+
+    {{#hasExempt}}
+    <p class="legend">E = Artículo exento de ITBIS.</p>
+    {{/hasExempt}}
+
+    <div class="sign">
+      <div>Entregado por</div>
+      <div>Recibido conforme</div>
+    </div>
+
+    <div class="footer">
+      <span>Original: Cliente &nbsp;·&nbsp; Copia: Contabilidad</span>
+      <span>Gracias por su preferencia</span>
+    </div>
+  </body>
+</html>

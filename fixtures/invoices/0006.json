@@ -1,0 +1,43 @@
+{
+  "id": "0006",
+  "template": "thermal",
+  "invoice": {
+    "issuer": {
+      "name": "Colmado Doña Carmen",
+      "rnc": "130678901"
+    },
+    "customer": {
+      "name": "Yolanda Castillo",
+      "rnc": "04778390706"
+    },
+    "ncf": "B0200011750",
+    "date": "2026-07-19",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Huevos cartón 30 u",
+        "quantity": 6,
+        "unitPrice": 201,
+        "total": 1206,
+        "exempt": true
+      },
+      {
+        "description": "Arroz selecto lb",
+        "quantity": 1.5,
+        "unitPrice": 28.5,
+        "total": 42.75,
+        "exempt": true
+      },
+      {
+        "description": "Plátanos verdes",
+        "quantity": 8,
+        "unitPrice": 17,
+        "total": 136,
+        "exempt": true
+      }
+    ],
+    "subtotal": 1384.75,
+    "itbis": 0,
+    "total": 1384.75
+  }
+}

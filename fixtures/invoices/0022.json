@@ -1,0 +1,29 @@
+{
+  "id": "0022",
+  "template": "classic",
+  "invoice": {
+    "issuer": {
+      "name": "Ferretería El Progreso SRL",
+      "rnc": "131123457"
+    },
+    "customer": {
+      "name": "Grupo Cibao Logístico SRL",
+      "rnc": "131778895"
+    },
+    "ncf": "B0100006199",
+    "date": "2025-12-03",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Brocha 3\"",
+        "quantity": 6,
+        "unitPrice": 126,
+        "total": 756,
+        "exempt": false
+      }
+    ],
+    "subtotal": 756,
+    "itbis": 136.08,
+    "total": 892.08
+  }
+}

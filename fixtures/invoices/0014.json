@@ -1,0 +1,64 @@
+{
+  "id": "0014",
+  "template": "modern",
+  "invoice": {
+    "issuer": {
+      "name": "Papelería Universal SRL",
+      "rnc": "102345678"
+    },
+    "customer": {
+      "name": "Hotel Playa Dorada SRL",
+      "rnc": "101990015"
+    },
+    "ncf": "B0100006177",
+    "date": "2025-07-08",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Cinta adhesiva transparente",
+        "quantity": 11,
+        "unitPrice": 63,
+        "total": 693,
+        "exempt": false
+      },
+      {
+        "description": "Bolígrafos azules caja 12 u",
+        "quantity": 7,
+        "unitPrice": 162.5,
+        "total": 1137.5,
+        "exempt": false
+      },
+      {
+        "description": "Marcadores permanentes 4 u",
+        "quantity": 5,
+        "unitPrice": 259.5,
+        "total": 1297.5,
+        "exempt": false
+      },
+      {
+        "description": "Grapadora de escritorio",
+        "quantity": 3,
+        "unitPrice": 315.5,
+        "total": 946.5,
+        "exempt": false
+      },
+      {
+        "description": "Resma papel bond 8.5 x 11",
+        "quantity": 1,
+        "unitPrice": 413,
+        "total": 413,
+        "exempt": false
+      },
+      {
+        "description": "Libreta rayada 100 hojas",
+        "quantity": 12,
+        "unitPrice": 71.5,
+        "total": 858,
+        "exempt": false
+      }
+    ],
+    "subtotal": 5345.5,
+    "itbis": 962.19,
+    "total": 6307.69
+  }
+}

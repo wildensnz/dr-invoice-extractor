@@ -1,0 +1,57 @@
+{
+  "id": "0029",
+  "template": "modern",
+  "invoice": {
+    "issuer": {
+      "name": "Repuestos Hermanos Pérez SRL",
+      "rnc": "132567897"
+    },
+    "customer": {
+      "name": "Reyes & Asociados Abogados SRL",
+      "rnc": "131223346"
+    },
+    "ncf": "E310000031445",
+    "date": "2025-10-02",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Filtro de aceite",
+        "quantity": 6,
+        "unitPrice": 520.5,
+        "total": 3123,
+        "exempt": false
+      },
+      {
+        "description": "Bujía de iridio",
+        "quantity": 12,
+        "unitPrice": 232.5,
+        "total": 2790,
+        "exempt": false
+      },
+      {
+        "description": "Líquido de frenos DOT 4",
+        "quantity": 4,
+        "unitPrice": 406,
+        "total": 1624,
+        "exempt": false
+      },
+      {
+        "description": "Batería 12 V 65 Ah",
+        "quantity": 3,
+        "unitPrice": 7233,
+        "total": 21699,
+        "exempt": false
+      },
+      {
+        "description": "Pastillas de freno delanteras (juego)",
+        "quantity": 1,
+        "unitPrice": 1948,
+        "total": 1948,
+        "exempt": false
+      }
+    ],
+    "subtotal": 31184,
+    "itbis": 5613.12,
+    "total": 36797.12
+  }
+}

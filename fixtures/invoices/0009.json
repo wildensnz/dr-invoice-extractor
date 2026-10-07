@@ -1,0 +1,78 @@
+{
+  "id": "0009",
+  "template": "thermal",
+  "invoice": {
+    "issuer": {
+      "name": "Farmacia San Judas Tadeo SRL",
+      "rnc": "131789013"
+    },
+    "customer": {
+      "name": "Juan Carlos Pérez",
+      "rnc": "04799075769"
+    },
+    "ncf": "B0200011758",
+    "date": "2026-03-17",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Shampoo anticaspa 400 ml",
+        "quantity": 8,
+        "unitPrice": 372,
+        "total": 2976,
+        "exempt": false
+      },
+      {
+        "description": "Amoxicilina 500 mg caja 21 cap",
+        "quantity": 12,
+        "unitPrice": 331,
+        "total": 3972,
+        "exempt": true
+      },
+      {
+        "description": "Acetaminofén 500 mg caja 20 tab",
+        "quantity": 8,
+        "unitPrice": 102,
+        "total": 816,
+        "exempt": true
+      },
+      {
+        "description": "Pañales talla M paq 36 u",
+        "quantity": 10,
+        "unitPrice": 563.5,
+        "total": 5635,
+        "exempt": false
+      },
+      {
+        "description": "Loratadina 10 mg caja 10 tab",
+        "quantity": 11,
+        "unitPrice": 155,
+        "total": 1705,
+        "exempt": true
+      },
+      {
+        "description": "Desodorante roll-on",
+        "quantity": 1,
+        "unitPrice": 230.5,
+        "total": 230.5,
+        "exempt": false
+      },
+      {
+        "description": "Omeprazol 20 mg caja 14 cap",
+        "quantity": 1,
+        "unitPrice": 239,
+        "total": 239,
+        "exempt": true
+      },
+      {
+        "description": "Suero oral sobre",
+        "quantity": 10,
+        "unitPrice": 26.5,
+        "total": 265,
+        "exempt": true
+      }
+    ],
+    "subtotal": 15838.5,
+    "itbis": 1591.47,
+    "total": 17429.97
+  }
+}

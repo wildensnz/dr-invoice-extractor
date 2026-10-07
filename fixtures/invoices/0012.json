@@ -1,0 +1,32 @@
+{
+  "id": "0012",
+  "template": "thermal",
+  "invoice": {
+    "issuer": {
+      "name": "Supermercado La Economía SRL",
+      "rnc": "103456782"
+    },
+    "ncf": "B0200011764",
+    "date": "2025-08-30",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Plátanos verdes",
+        "quantity": 7,
+        "unitPrice": 22.5,
+        "total": 157.5,
+        "exempt": true
+      },
+      {
+        "description": "Aceite vegetal 128 oz",
+        "quantity": 3,
+        "unitPrice": 508.5,
+        "total": 1525.5,
+        "exempt": false
+      }
+    ],
+    "subtotal": 1683,
+    "itbis": 274.59,
+    "total": 1957.59
+  }
+}

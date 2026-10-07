@@ -1,0 +1,36 @@
+{
+  "id": "0016",
+  "template": "classic",
+  "invoice": {
+    "issuer": {
+      "name": "Distribuidora Caribe Norte SRL",
+      "rnc": "101876549"
+    },
+    "customer": {
+      "name": "Hotel Playa Dorada SRL",
+      "rnc": "101990015"
+    },
+    "ncf": "B0100006186",
+    "date": "2025-11-06",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Harina de trigo 10 lb",
+        "quantity": 12,
+        "unitPrice": 447.5,
+        "total": 5370,
+        "exempt": true
+      },
+      {
+        "description": "Aceite vegetal 1 gl",
+        "quantity": 8,
+        "unitPrice": 655,
+        "total": 5240,
+        "exempt": false
+      }
+    ],
+    "subtotal": 10610,
+    "itbis": 943.2,
+    "total": 11553.2
+  }
+}

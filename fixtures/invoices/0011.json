@@ -1,0 +1,36 @@
+{
+  "id": "0011",
+  "template": "modern",
+  "invoice": {
+    "issuer": {
+      "name": "Papelería Universal SRL",
+      "rnc": "102345678"
+    },
+    "customer": {
+      "name": "Rafael Núñez",
+      "rnc": "04739346149"
+    },
+    "ncf": "E320000005071",
+    "date": "2025-12-05",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Libreta rayada 100 hojas",
+        "quantity": 6,
+        "unitPrice": 95,
+        "total": 570,
+        "exempt": false
+      },
+      {
+        "description": "Carpetas manila 100 u",
+        "quantity": 8,
+        "unitPrice": 281,
+        "total": 2248,
+        "exempt": false
+      }
+    ],
+    "subtotal": 2818,
+    "itbis": 507.24,
+    "total": 3325.24
+  }
+}

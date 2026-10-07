@@ -1,0 +1,43 @@
+{
+  "id": "0025",
+  "template": "classic",
+  "invoice": {
+    "issuer": {
+      "name": "Suplidora Industrial Duarte SRL",
+      "rnc": "130456781"
+    },
+    "customer": {
+      "name": "Constructora Duarte SRL",
+      "rnc": "101122331"
+    },
+    "ncf": "B0100006200",
+    "date": "2026-06-29",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Brocha 3\"",
+        "quantity": 12,
+        "unitPrice": 107,
+        "total": 1284,
+        "exempt": false
+      },
+      {
+        "description": "Cinta métrica 5 m",
+        "quantity": 4,
+        "unitPrice": 230,
+        "total": 920,
+        "exempt": false
+      },
+      {
+        "description": "Cemento gris 42.5 kg",
+        "quantity": 12,
+        "unitPrice": 380.5,
+        "total": 4566,
+        "exempt": false
+      }
+    ],
+    "subtotal": 6770,
+    "itbis": 1218.6,
+    "total": 7988.6
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "0019",
+  "template": "classic",
+  "invoice": {
+    "issuer": {
+      "name": "Ferretería El Progreso SRL",
+      "rnc": "131123457"
+    },
+    "customer": {
+      "name": "Dirección General de Aduanas",
+      "rnc": "401003341"
+    },
+    "ncf": "B1500033451",
+    "date": "2026-08-29",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Bloque de 6\"",
+        "quantity": 10,
+        "unitPrice": 30.5,
+        "total": 305,
+        "exempt": false
+      },
+      {
+        "description": "Cinta métrica 5 m",
+        "quantity": 6,
+        "unitPrice": 210,
+        "total": 1260,
+        "exempt": false
+      },
+      {
+        "description": "Pintura acrílica blanca gl",
+        "quantity": 1,
+        "unitPrice": 985,
+        "total": 985,
+        "exempt": false
+      },
+      {
+        "description": "Candado 50 mm",
+        "quantity": 9,
+        "unitPrice": 417,
+        "total": 3753,
+        "exempt": false
+      }
+    ],
+    "subtotal": 6303,
+    "itbis": 1134.54,
+    "total": 7437.54
+  }
+}

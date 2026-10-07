@@ -1,0 +1,60 @@
+{
+  "id": "0015",
+  "template": "thermal",
+  "invoice": {
+    "issuer": {
+      "name": "Supermercado La Economía SRL",
+      "rnc": "103456782"
+    },
+    "ncf": "E320000005075",
+    "date": "2025-07-04",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Refresco 2 L",
+        "quantity": 11,
+        "unitPrice": 107.5,
+        "total": 1182.5,
+        "exempt": false
+      },
+      {
+        "description": "Papel higiénico 4 rollos",
+        "quantity": 4,
+        "unitPrice": 153.5,
+        "total": 614,
+        "exempt": false
+      },
+      {
+        "description": "Jabón de cuaba",
+        "quantity": 12,
+        "unitPrice": 46,
+        "total": 552,
+        "exempt": false
+      },
+      {
+        "description": "Detergente en polvo 1 kg",
+        "quantity": 6,
+        "unitPrice": 173.5,
+        "total": 1041,
+        "exempt": false
+      },
+      {
+        "description": "Pollo fresco lb",
+        "quantity": 4.5,
+        "unitPrice": 87.5,
+        "total": 393.75,
+        "exempt": true
+      },
+      {
+        "description": "Pan de agua",
+        "quantity": 4,
+        "unitPrice": 9.5,
+        "total": 38,
+        "exempt": true
+      }
+    ],
+    "subtotal": 3821.25,
+    "itbis": 610.11,
+    "total": 4431.36
+  }
+}

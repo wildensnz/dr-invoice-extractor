@@ -1,0 +1,35 @@
+{
+  "id": "0027",
+  "template": "thermal",
+  "invoice": {
+    "issuer": {
+      "name": "Farmacia San Judas Tadeo SRL",
+      "rnc": "131789013"
+    },
+    "customer": {
+      "name": "María Rodríguez"
+    },
+    "ncf": "B0200011784",
+    "date": "2025-08-19",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Pañales talla M paq 36 u",
+        "quantity": 9,
+        "unitPrice": 629.5,
+        "total": 5665.5,
+        "exempt": false
+      },
+      {
+        "description": "Alcohol 70% 16 oz",
+        "quantity": 11,
+        "unitPrice": 128.5,
+        "total": 1413.5,
+        "exempt": false
+      }
+    ],
+    "subtotal": 7079,
+    "itbis": 1274.22,
+    "total": 8353.22
+  }
+}

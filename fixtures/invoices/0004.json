@@ -1,0 +1,57 @@
+{
+  "id": "0004",
+  "template": "classic",
+  "invoice": {
+    "issuer": {
+      "name": "Ferretería El Progreso SRL",
+      "rnc": "131123457"
+    },
+    "customer": {
+      "name": "Constructora Duarte SRL",
+      "rnc": "101122331"
+    },
+    "ncf": "B0100006162",
+    "date": "2026-05-31",
+    "currency": "DOP",
+    "items": [
+      {
+        "description": "Varilla 3/8\" x 20 pies",
+        "quantity": 6,
+        "unitPrice": 317.5,
+        "total": 1905,
+        "exempt": false
+      },
+      {
+        "description": "Pintura acrílica blanca gl",
+        "quantity": 3,
+        "unitPrice": 964,
+        "total": 2892,
+        "exempt": false
+      },
+      {
+        "description": "Bloque de 6\"",
+        "quantity": 7,
+        "unitPrice": 28,
+        "total": 196,
+        "exempt": false
+      },
+      {
+        "description": "Clavos 2\" lb",
+        "quantity": 3.5,
+        "unitPrice": 72.5,
+        "total": 253.75,
+        "exempt": false
+      },
+      {
+        "description": "Candado 50 mm",
+        "quantity": 3,
+        "unitPrice": 336,
+        "total": 1008,
+        "exempt": false
+      }
+    ],
+    "subtotal": 6254.75,
+    "itbis": 1125.86,
+    "total": 7380.61
+  }
+}
