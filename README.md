@@ -5,7 +5,27 @@ vision, validate them with local business rules (RNC, NCF, ITBIS, totals), revie
 and fix them in the browser, and measure extraction accuracy with an eval suite.
 
 > Work in progress. Phases: scaffold ✅ · schema + validation + fixtures ✅ ·
-> extraction API · review UI · evals · CI + deploy.
+> extraction API ✅ · review UI · evals · CI + deploy.
+
+## How extraction works
+
+`POST /api/extract` takes a multipart `file` and returns
+`{ invoice, checks, usage }`.
+
+1. The file is sniffed by magic bytes (JPEG, PNG, WebP or PDF) and capped at
+   5 MB before anything is sent anywhere. Requests are rate limited per client.
+2. `lib/extract.ts` sends the image (`image` block) or PDF (`document` block)
+   to Claude with a short system prompt that explains the Dominican context
+   (RNC, NCF series, ITBIS 18 %, dd/mm/yyyy dates, RD$).
+3. The response is constrained with **structured outputs**:
+   `output_config.format` carries the JSON Schema derived from the zod
+   `InvoiceSchema`, so the model can only emit a document of that shape. (The
+   older trick of forcing `tool_choice` to an extraction tool is rejected by
+   current models, structured outputs is its replacement.)
+4. The JSON is parsed again with zod on our side. If that fails, the issues are
+   sent back to the model for one retry; after that the API answers 422.
+5. The validation rules below run on the parsed invoice and the result goes to
+   the review UI. Nothing is stored.
 
 ## Validation rules
 

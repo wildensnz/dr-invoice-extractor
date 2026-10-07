@@ -19,6 +19,15 @@ const eslintConfig = defineConfig([
     files: ['**/*.mjs', '**/*.js'],
     extends: [tseslint.configs.disableTypeChecked],
   },
+  {
+    // Vitest matchers and Response.json() are typed as `any`.
+    files: ['tests/**/*.ts'],
+    rules: {
+      '@typescript-eslint/no-unsafe-assignment': 'off',
+      '@typescript-eslint/no-unsafe-member-access': 'off',
+      '@typescript-eslint/no-unsafe-argument': 'off',
+    },
+  },
   globalIgnores([
     '.next/**',
     'out/**',
