@@ -5,7 +5,20 @@ vision, validate them with local business rules (RNC, NCF, ITBIS, totals), revie
 and fix them in the browser, and measure extraction accuracy with an eval suite.
 
 > Work in progress. Phases: scaffold ✅ · schema + validation + fixtures ✅ ·
-> extraction API ✅ · review UI ✅ · evals · CI + deploy.
+> extraction API ✅ · review UI ✅ · evals ✅ (script; first real run pending) ·
+> CI + deploy.
+
+## Evals
+
+`npm run eval` extracts all 30 fixtures as PDF and as PNG (60 API calls),
+compares each result with the expected JSON and writes
+[`evals/report.md`](evals/report.md): accuracy per field (overall, PDF, PNG),
+perfect-extraction rate per layout, token cost, and every mismatch with the
+expected and extracted values. Exact match for RNC, NCF, date and line count;
+±RD$1 for money. It needs `ANTHROPIC_API_KEY` and never runs in CI.
+
+Options: `--format pdf|png`, `--ids 0001,0002`, `--limit N`,
+`--concurrency N`, `--model <id>`.
 
 ## How extraction works
 

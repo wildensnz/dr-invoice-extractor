@@ -44,3 +44,6 @@ next-env.d.ts
 /test-results
 /playwright-report
 .claude/
+
+# eval raw output (report.md is committed, results.json is not)
+/evals/results.json
