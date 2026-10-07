@@ -5,7 +5,7 @@ vision, validate them with local business rules (RNC, NCF, ITBIS, totals), revie
 and fix them in the browser, and measure extraction accuracy with an eval suite.
 
 > Work in progress. Phases: scaffold ✅ · schema + validation + fixtures ✅ ·
-> extraction API ✅ · review UI · evals · CI + deploy.
+> extraction API ✅ · review UI ✅ · evals · CI + deploy.
 
 ## How extraction works
 

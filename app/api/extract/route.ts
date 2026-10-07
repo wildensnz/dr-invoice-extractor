@@ -4,7 +4,6 @@ import { extractInvoice, ExtractionError } from '@/lib/extract';
 import { checkFile, MAX_FILE_BYTES } from '@/lib/files';
 import { clientKey, createRateLimiter } from '@/lib/rate-limit';
 
-export const runtime = 'nodejs';
 export const maxDuration = 60;
 
 /** 10 extractions per minute per client. */
